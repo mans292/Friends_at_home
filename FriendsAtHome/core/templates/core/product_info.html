@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="gallery_container">
+
+    <div class="pictures">
+        <h1 style="text-decoration: underline; color: rgb(16, 15, 15);">{{product.name}}</h1>
+        {% if product.name == "Oak book stable" %}
+        <h4>Denna station laddar din telefon med stil samtidigt som den gömmer alla sladdar!</h4>
+        <img src="{% static 'images/'|add:product.name|add:'.jpeg' %}">
+        <img src="{% static 'images/'|add:product.name|add:'2'|add:'.jpeg' %}">
+        <img src="{% static 'images/'|add:product.name|add:'3'|add:'.jpeg' %}">
+        {% else %}
+        <h4>Gömmer sladdar och laddar alla dina enheter, från telefon till dator!</h4>
+        <img src="{% static 'images/'|add:product.name|add:'.jpeg' %}">
+        <img src="{% static 'images/'|add:product.name|add:'2'|add:'.jpeg' %}">
+        {% endif %}
+    </div>
+
+    {% if product.kvantitet != 0 %}
+    <div class="buy_product">
+        <a href="{% url 'add_to_cart' product.id %}">
+            <button name="add_to_cart" id="add_to_cart">Köp</button>
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+
+{% endblock content %}

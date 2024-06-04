@@ -1,0 +1,36 @@
+
+{% load static %}
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+
+<div class="navbar-outer">
+    <div class="navbar">
+
+        <div class="left">
+            <a href="/"><img src="{% static 'images/logo.jpeg' %}"></a>
+        </div>
+        
+        <div class="center">
+            <h1>Friends At Home</h1>
+        </div>
+        
+    
+        <div class="right" >
+                <a id="ds" href="{% url 'care' %}"><h4>ANVÄNDNING</h4></a>
+                <a id="ds" href="{% url 'about' %}"><h4>OM OSS</h4></a>
+                <a href="{% url 'create_order' %}"><i class="fa fa-lg">&#xf07a;</i></a>
+        </div>
+    
+    
+    </div>
+        
+    
+    <hr>
+    
+</div>
+
+
+
+
+
+

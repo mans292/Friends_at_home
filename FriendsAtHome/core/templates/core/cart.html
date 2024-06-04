@@ -1,0 +1,91 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+{% if cart_items %}
+
+<div class="cart">
+
+    <div class="cart_items">
+        <h3>Föremål i vagnen</h3>
+
+        <div class="cart_inside">
+            <form method="post" >
+                {% csrf_token %}
+                    {% for item in cart_items %}
+                    <div class="smaller_screen_cart">
+                        <p>{{ item.product.name }}</p>
+                    </div>
+                    <div class="cart_info"> 
+
+                        <div class="img">
+                            <img src="{% static 'images/'|add:item.product.name|add:'.jpeg' %}">                            
+                        </div>
+
+                        <div class="larger_screen_cart">
+                            <p>{{ item.product.name }}</p>
+                        </div>
+
+                        <div class="quantity">
+                            {% if item.quantity > 1 %}
+                            <a href="{% url 'decrease_quantity' item.product.id %}"><img src="{% static 'images/minus.jpeg' %}"></a>
+                            {% endif %}
+                            <p>{{ item.quantity }}</p>
+                            <input type="hidden" id="quantity_{{item.product.name}}" 
+                                name="quantity_{{item.product.name}}" min="1" max="5" value="{{ item.quantity }}" >
+                            {% if item.product.kvantitet > item.quantity %}
+                            <a href="{% url 'add_quantity' item.product.id %}"><img src="{% static 'images/plus.jpeg' %}"></i></a>
+                            {% endif %}
+                        </div>
+
+                        <div class="remove">
+                            <a href="{% url 'remove_from_cart' item.product.id %}"><img src="{% static 'images/remove.jpeg' %}"></a>
+                        </div>
+        
+                        
+
+                    </div>
+                    {% endfor %}
+                
+                <div class="köpknapp">
+                    <input id="buy_button"  type="submit" value="Köp">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart_sum">
+        <h3>Sammanställning</h3>
+        <hr>
+
+        <table>
+        
+            <tr>
+                <div>
+                    <p>Moms:</p>
+                    <p id="int">{{ tax }}</p>
+                </div>
+              
+            </tr>
+            <hr>
+            <tr>
+                <div>
+                    <p>Totalt pris (moms inkl.):</p>
+                    <p id="int">{{ tot_price }}</p>
+                </div>
+                
+            </tr>
+            </div>
+        </table>
+    </div>
+
+</div>
+{% else %}
+<div class="empty">
+    <h1>Vagnen är tom...</h1>
+</div>
+{% endif %}
+
+
+
+{% endblock content %}

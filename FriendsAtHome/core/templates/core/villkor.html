@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="Villkor">
+    <h1>Köp och leveransvillkor</h1>
+
+    <div>
+        <h4>Betalning</h4>
+        <p>Betalningen sker i sammarbete med Klarna. Vid utcheckningnen visas relevanta betalningsalternativ och du kan handla snbbt och enkelt. 
+            Betalningen sker även enligt gällande regler för online-betalning i Sverige och EU.
+        </p>
+    </div>
+
+    <div>
+        <h4>Leverans</h4>
+        <p>Leveransen sker i sammarbete med Postnord och leveranstiden visas vid betalningen. Vi kommer packa din order och göra den redo samma arbetsdag
+            om ordern kommer innan 17:00.
+        </p>
+    </div>
+
+    <div>
+        <h4>Frakt</h4>
+        <p>Du står själv för frakten vid beställning av enskilda varor. Vid köp av två eller fler enheter erbjuds fri frakt. 
+            Om du önskar att returnera en vara står du själv för returfrakten.
+        </p>
+    </div>
+
+    <div>
+        <h4>Reklamation och ångerrätt</h4>
+        <p>Vi följer konsumentköplagen för alla våra produkter. Du har rätt att ångra dig i 14 dagar efter mottagandet av varan.
+            Det räcker med att kontakta oss för retur av varan på den 14:e dagen för att du ska ha rätt att ångra dig. Viktigt att notera är däremot
+            att du står för eventuell returfrakt själv. När du returnerar varan kontaktar du oss för en returfraktsedel eller eventuell överlämning av varan
+            på bestämd plats.
+        </p>
+    </div>
+
+    <div>
+        <h4>Skador på paket</h4>
+        <p>Om du upptäcker skador på paketet ska du omedelbart anmäla detta till postkontoret och göra en skadeanmälan. Du ska inte öppna ett skadat paket,
+             men om skadan upptäcks efter uthämtning och är av den art att den kan relateras till postens agerande skall du kontakta dem och göra en skadeanmälan. 
+             Vid tvist med posten som inte kan lösas, kontakta oss. 
+        </p>
+    </div>
+
+    <h4><a href="{% url 'policies' %}">Integritetspolicy</a></h4>
+
+</div>
+
+{% endblock content %}

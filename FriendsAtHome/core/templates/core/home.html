@@ -1,0 +1,60 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="home-container">
+    
+    <video autoplay muted loop>
+        <source src="{% static 'videos/intro.mp4' %}" type="video/mp4">
+    </video>
+
+    <p id="pr">PRODUKTER</p>
+
+    {% for product in products %}
+    {% if product.kvantitet == 0 %}
+    <div class="product_info">
+
+        <div class="product_image">
+            <a href="{% url 'product_info' product.id %}"><img src="{% static 'images/'|add:product.name|add:'.jpeg' %}"></a>
+        </div>
+       
+        
+        <div class="prod_info_info">
+                <p>{{product.name}} {{product.price}}</p>
+            <p>Varan är tyvärr slutsåld</p>
+        </div>
+        
+    </div>
+    {% else %}
+    <div class="product_info">
+
+        <div class="product_image">
+            <a href="{% url 'product_info' product.id %}"><img src="{% static 'images/'|add:product.name|add:'.jpeg' %}"></a>
+        </div>
+       
+        
+        <div class="prod_info_info">
+                <p>{{product.name}} {{product.price}}</p>
+            <a href="{% url 'add_to_cart' product.id %}">
+                <button name="add_to_cart" id="add_to_cart">Lägg till</button>
+            </a>
+        </div>
+        
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <div class="smaller_screen_homepage">
+        <a href="{% url 'care' %}"><h4>ANVÄNDNING</h4></a>
+        <a href="{% url 'about' %}"><h4>OM OSS</h4></a>
+    </div>
+   
+
+    
+
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,908 @@
+
+@media only screen and (max-width: 5000px) and (min-height: 601px) {
+    body{
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+
+        
+    }
+
+    .wrapper{
+        overflow-y: scroll;
+        height: 100vh;  
+    }
+
+    .Integritetspolicy{
+
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 25px;
+        color: rgb(16, 15, 15);
+
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    .Villkor{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 25px;
+        color: rgb(16, 15, 15);
+
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    .hantering{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 25px;
+        color: rgb(16, 15, 15);
+        
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .hantering #mitt{
+        text-align: center;
+    }
+
+    .hantering div{
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+
+    .om{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 25px;
+        color: rgb(16, 15, 15);
+        text-align: center;
+        margin: 15%;
+    }
+ 
+    /* home page */
+    .home-container{
+        display: block;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 25px;
+        color: rgb(16, 15, 15);
+        max-width: 100%;
+   
+    }
+
+    .home-container #pr{
+        font-size: 130%;
+        padding-top: 10%;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(16, 15, 15);
+        
+    }
+    
+    .home-container video{
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        height: auto;
+
+    }
+
+    .home-container .product_info{
+        display: flex;
+        margin-top: 8%;
+    }
+
+    .home-container .prod_info_info{
+        margin-top: 17%; 
+        text-align: center; 
+        margin-left: 2%;
+    }
+
+    .home-container .product_info .product_image{
+        margin-left: 1%;
+    }
+    
+    
+    .home-container img {
+        display: block;
+        max-width: 100%; 
+        width: 900px;
+        height: auto;
+        
+    }
+    
+    .home-container button{
+    background-color: rgb(16, 15, 15); /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 8px; /* Set padding to provide space around the text */
+    font-size: 12px; /* Set the font size */
+    font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    }
+    
+    /* navbar */
+    .navbar{
+        width: 100%;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        background-color: rgb(16, 15, 15);
+    }
+
+    .navbar-outer hr{
+        border-color: rgb(195, 165, 91); 
+        margin-top: 0;
+    }
+
+    .navbar .center{
+        text-align: center;
+        width: 40%;
+    }
+    .navbar .right{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .navbar .right a{
+        margin-right: 25px;
+    }
+    .navbar .left{
+        width: 30%;
+    }
+    
+    .navbar .left img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .navbar i.fa {
+        color: white;
+        font-size: 23px;
+    }
+    .navbar a:link{
+        color: white;
+        text-decoration: none;
+    }
+    .navbar a:visited{
+        color:white;
+        text-decoration: none;
+    } 
+    .navbar a:hover{
+        color: rgb(230, 221, 221);
+        text-decoration: underline;
+    }
+    .navbar a:active{
+        color: white;  
+        text-decoration: none;
+    }
+    
+    
+    /* cart */
+    .cart{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: x-large;
+        color: rgb(16, 15, 15);
+        margin-left: 3%;
+        margin-top: 5%;
+        display: flex;
+        max-width: 100%;
+        
+    }
+
+
+    .cart .cart_items{
+        width: 57%;
+        font-size: 25px;
+    }
+
+    .cart .cart_items .cart_inside {
+        padding: 2%;
+        background-color: rgb(230, 221, 221);
+        border-radius: 10px;
+    }
+
+
+    .cart .cart_items .cart_inside .cart_info{
+        display: flex;
+        align-items: center;
+    }
+
+    .cart .cart_items .cart_inside .cart_info div{
+        margin-right: 5%;
+    }
+
+    .cart .cart_items .cart_inside .cart_info .quantity img{
+        width: 15px;
+        height: auto;
+    }
+
+    .cart .cart_items .cart_inside .cart_info .quantity a{
+        margin: 10px;
+    }
+
+    .cart .cart_items .cart_inside .quantity{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .cart .cart_items .cart_inside .cart_info .remove a img{
+        width: 15px;
+        height: auto;
+    }
+
+    .cart .cart_items .cart_inside .cart_info .remove{
+        margin-left: auto;
+    }
+ 
+
+    .cart .cart_items .cart_inside .img{
+        margin-right: auto;
+    }
+
+    .cart .cart_items .cart_inside .img img{
+        max-width: 100%;
+        width: 150px;
+        height: auto;
+        
+    }
+
+    .cart .cart_items .cart_inside #buy_button{
+        background-color: rgb(230, 221, 221);
+        color: rgb(16, 15, 15); 
+        padding-right: 12px; 
+        padding-left: 12px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .cart .cart_sum{
+        text-align: center;
+        width: 35%;
+        border: 1px solid black;
+        margin-left: 5%;
+        margin-top: 7%;
+        
+    }
+
+    .cart .cart_sum div{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 22px;
+    }
+
+    .cart .köpknapp{
+        margin-left: 3%
+    }
+
+    .empty{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        text-align: center;
+        margin-top: 15%;
+        font-size: 30px;
+    }
+
+
+    .gallery_container {
+        width: 100%;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        color: rgb(16, 15, 15);
+        text-align: center;
+    }
+
+    .pictures{
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .pictures img{
+        width: 70%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+
+    
+
+    .gallery_container .buy_product{
+        margin-bottom: 3%;
+    }
+
+    .gallery_container button{
+        background-color: rgb(16, 15, 15); 
+        color: white; 
+        padding-top: 5px; 
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 30px; 
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+    }
+
+    
+    .downbar{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        background-color: rgb(37, 34, 34);
+        padding-top: 3%;
+        padding-bottom: 2%;
+        color: rgb(16, 15, 15);
+        max-width: 100%;
+    }
+
+    .downbar-outer hr{
+        border-color: rgb(15, 15, 16); 
+        margin-top: 20%; 
+        margin-bottom: 0; 
+        max-width: 100%;
+    }
+   
+    
+    .downbar .info{
+        max-width: 100%;
+        display: flex;
+        margin-left: 3%;
+    }
+    
+    .downbar .info div{
+
+        margin-left: 5%;
+    }
+
+    .downbar .company{
+        margin-top: 12%;
+        margin-left: 8%;
+        color: rgb(208, 198, 198);
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+
+    .downbar i.fa {
+        color: rgb(16, 15, 15);
+        font-size: 23px;
+    }
+    .downbar a:link{
+        color: rgb(16, 15, 15);
+        text-decoration: none;
+    }
+    .downbar a:visited{
+        color:rgb(16, 15, 15);
+        text-decoration: none;
+    } 
+    .downbar a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    .downbar a:active{
+        color: rgb(16, 15, 15);  
+        text-decoration: none;
+    }
+    
+    .smaller_screen_homepage{
+        display: none;
+    }
+
+    .cart .smaller_screen_cart{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 850px){
+    
+ 
+
+    body{
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        min-height: 100vh;
+        
+    }
+
+    .wrapper{
+        overflow-y: scroll;
+        height: 100vh;  
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* home-page major changes */
+
+    .smaller_screen_homepage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+      
+    }
+    .smaller_screen_homepage a:link{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .smaller_screen_homepage a:visited{
+        color:rgb(0, 0, 0);
+        text-decoration: none;
+    } 
+    .smaller_screen_homepage a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+    }
+    .smaller_screen_homepage a:active{
+        color: rgb(0, 0, 0);  
+        text-decoration: none;
+    }
+
+    /* changes over */
+
+    .home-container{
+        font-size: 15px;
+    }
+
+    .home-container #pr{
+        font-size: 130%;
+        padding-top: 10%;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(16, 15, 15);
+        font-size: 20px;
+        
+    }
+    
+    .home-container video{
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+
+    }
+
+    .home-container .product_info{
+        display: block;
+        margin-top: 8%;
+        margin-bottom: 20%;
+    }
+
+    .home-container .prod_info_info{
+        margin-top: 3%; 
+        text-align: center; 
+        
+    }
+
+   
+    
+    .home-container img {
+        display: block;
+        max-width: 100%; 
+        width: 900px;
+        height: auto;
+        
+    }
+    
+    .home-container button{
+    background-color: rgb(16, 15, 15); /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 8px; /* Set padding to provide space around the text */
+    font-size: 12px; /* Set the font size */
+    font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    }
+
+
+
+
+
+
+    
+
+
+ 
+
+    /* navbar - major changes */
+    #ds{
+        display: none;
+    }
+    /* navbar - changes over */
+
+
+    .navbar{
+        max-width: 100%;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        background-color: rgb(16, 15, 15);
+        font-size: 10px;
+    }
+
+    .navbar-outer hr{
+        border-color: rgb(195, 165, 91); 
+        margin-top: 0;
+    }
+
+    .navbar .center{
+        text-align: center;
+        width: 60%;
+    }
+    .navbar .right{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .navbar .right a{
+        margin-right: 25px;
+    }
+    .navbar .left{
+        width: 20%;
+    }
+    
+    .navbar .left img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .navbar i.fa {
+        color: white;
+        font-size: 23px;
+    }
+    .navbar a:link{
+        color: white;
+        text-decoration: none;
+    }
+    .navbar a:visited{
+        color:white;
+        text-decoration: none;
+    } 
+    .navbar a:hover{
+        color: rgb(230, 221, 221);
+        text-decoration: underline;
+    }
+    .navbar a:active{
+        color: white;  
+        text-decoration: none;
+    }
+    
+    
+
+
+
+
+
+
+
+
+    
+    .cart{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 14px;
+        color: rgb(16, 15, 15);
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 5%;
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        
+    }
+
+
+    .cart .cart_items{
+        width: 100%;
+        font-size: 18px;
+        
+    }
+
+    .cart .cart_items .cart_inside {
+        padding: 2%;
+        background-color: rgb(230, 221, 221);
+        border-radius: 10px;
+        
+    }
+
+
+    .cart .cart_items .cart_inside .cart_info{
+        display: flex;
+        align-items: center;
+    }
+
+    .cart .cart_items .cart_inside .cart_info div{
+        margin-right: 5%;
+    }
+
+    .cart .cart_items .cart_inside .cart_info .quantity img{
+        width: 15px;
+        height: auto;
+    }
+
+    .cart .cart_items .cart_inside .cart_info .quantity a{
+        margin: 11px;
+    }
+
+    .cart .cart_items .cart_inside .quantity{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .cart .cart_items .cart_inside .cart_info .remove a img{
+        width: 10px;
+        height: auto;
+    }
+
+    .cart .cart_items .cart_inside .cart_info .remove{
+        margin-left: auto;
+    }
+
+    .cart .smaller_screen_cart{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .cart .larger_screen_cart{
+        display: none;
+    }
+
+    .cart .cart_items .cart_inside .img{
+        margin-right: auto;
+    }
+
+    .cart .cart_items .cart_inside .img img{
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        
+    }
+
+    .cart .cart_items .cart_inside #buy_button{
+        background-color: rgb(230, 221, 221);
+        color: rgb(16, 15, 15); 
+        padding-right: 12px; 
+        padding-left: 12px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        font-size: 18px;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .cart .cart_sum{
+        text-align: center;
+        margin-left: 0;
+        border: 1px solid black;
+        width: 100%;
+       
+        margin-bottom: 50%;
+        margin-top: 10%;
+        
+    }
+
+    .cart .cart_sum div{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 14px;
+    }
+
+    .cart .köpknapp{
+        margin-left: 0;
+    }
+
+    .empty{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        text-align: center;
+        margin-top: 15%;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .gallery_container {
+        width: 100%;
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        color: rgb(16, 15, 15);
+        text-align: center;
+    }
+
+    .pictures{
+        font-size: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .pictures img{
+        width: 95%;
+        height: auto;
+        margin-bottom: 20%;
+    }
+
+    .gallery_container .buy_product{
+        margin-bottom: 3%;
+    }
+
+    .gallery_container button{
+        background-color: rgb(16, 15, 15); 
+        color: white; 
+        padding-top: 5px; 
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 30px; 
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+        margin-bottom: 20%;
+    }
+
+
+
+
+
+
+
+
+  
+    .downbar-outer{
+        margin-top: auto;
+    }
+    
+    .downbar{
+    
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        background-color: rgb(37, 34, 34);
+        padding-top: 3%;
+        padding-bottom: 2%;
+        color: rgb(16, 15, 15);
+        font-size: 10px;
+        max-width: 100%;
+    }
+
+
+    .downbar-outer hr{
+        border-color: rgb(15, 15, 16); 
+        margin-top: auto;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+
+   
+    
+    .downbar .info{
+        max-width: 100%;
+        display: flex;
+        margin-left: 3%;
+    }
+    
+    .downbar .info div{
+
+        margin-left: 5%;
+    }
+
+    .downbar .company{
+        margin-top: 12%;
+        margin-left: 8%;
+        color: rgb(208, 198, 198);
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+
+
+    .downbar a:link{
+        color: rgb(16, 15, 15);
+        text-decoration: none;
+    }
+    .downbar a:visited{
+        color:rgb(16, 15, 15);
+        text-decoration: none;
+    } 
+    .downbar a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    .downbar a:active{
+        color: rgb(16, 15, 15);  
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+    .Integritetspolicy{
+
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 100%;
+        color: rgb(16, 15, 15);
+        max-width: 100%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    .Villkor{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 100%;
+        color: rgb(16, 15, 15);
+        max-width: 100%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    .hantering{
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 14px;
+        color: rgb(16, 15, 15);
+        
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .hantering #mitt{
+        text-align: center;
+    }
+
+    .hantering div{
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+
+    .om{
+        
+        font-family: 'Futura','Trebuchet MS','Arial','sans-serif';
+        font-size: 14px;
+        color: rgb(16, 15, 15);
+        text-align: center;
+        margin: 15%;
+        
+    }
+    
+
+}
